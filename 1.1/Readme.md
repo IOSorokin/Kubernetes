@@ -23,9 +23,9 @@
 
     
 ## Подключиться к дашборду с помощью port-forward.
-   kubectl get nodes выше в скриншоте, при подключении к дашборду выскакивает следующая ошибка, победить не могу. 
-   Может у Вас есть идеи? 
-![изображение](https://github.com/IOSorokin/Kubernetes/assets/148979909/64efbc19-7b4a-4fed-9a01-e8eb9d28b5aa)
+   kubectl get nodes выше в скриншоте
 
-Пробовал и на локальной машине и в облаке
+   ![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/50605340-ae45-461e-87be-5c94016ad5da)
+
+   Разобрался, мой дашборд
 
