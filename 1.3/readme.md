@@ -11,7 +11,10 @@
 
 ##    Создать Deployment приложения, состоящего из двух контейнеров — nginx и multitool. Решить возникшую ошибку.
   Создал манифест для двух приложений. Так как у меня запущен Ingress с nginx в поде nginx-ingress-microk8s-controller-tdkdf, то порты 80, 443 будут заняты. Когда эти порты заняты, запуск multitool потребует указания альтернативного порта. Для этого в манифест Deployment добавляю переменную с указанием порта 1180.
+
 Пример файла deployment.yaml доступен по ссылке:
+
+https://github.com/IOSorokin/Kubernetes/blob/main/1.3/YAML/deployment.yaml
 
 Запускаю его и проверяю результат
 
@@ -23,6 +26,10 @@
 
 Пишу манифест service с именем nginx-multitool-svc в namespace netology. Применяю манифест:
 
+Ссылка на манифест сервиса:
+
+https://github.com/IOSorokin/Kubernetes/blob/main/1.3/YAML/service.yaml
+
 ![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/8dc3cfac-b7a7-4aae-a047-a2e936398c5a)
 
 Проверяю сервисы в namespace netology:
@@ -32,7 +39,10 @@
 Сервис создан
 
 Пишу манифест для отдельного пода multitool в namespace netology. Применяю манифест:
-Ссылка на манифест:
+
+Ссылка на манифест: 
+
+https://github.com/IOSorokin/Kubernetes/blob/main/1.3/YAML/multitool.yaml
 
 ![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/614f6c15-587e-4642-9312-b6f27d557876)
 
@@ -55,7 +65,10 @@
 
 
 Создаю манифест Deployment приложения nginx, который запустится только после запуска сервиса. В качестве Init-контейнера использую busybox:
+
 Ссылка на манифест: 
+
+https://github.com/IOSorokin/Kubernetes/blob/main/1.3/YAML/init-deploy.yaml
 
 ![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/5c968c79-8786-45e5-8536-646a454c2b94)
 
@@ -67,7 +80,10 @@ Deployment создан проверю запущен ли он
 Видно что он не запущен и находится в состоянии Init:0/1
 
 Создаю манифест Service, применяю его и проверяю запустился ли pod NGINX:
+
 Ссылка на манифест:
+
+https://github.com/IOSorokin/Kubernetes/blob/main/1.3/YAML/service.yaml
 
 ![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/a56f4792-c46a-4868-8dc5-a146960aa949)
 
