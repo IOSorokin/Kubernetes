@@ -87,6 +87,9 @@
 
 ![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/39903211-9c14-4046-bebc-6a121eb0191a)
 
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/4cabb7af-b922-4cbd-96cb-1aeb41b28cb3)
+
+
 Потому, что я полностью выключил firewall на ВМ в облаке, интернет там есть. Порты видны. Но не удается подключиться по внешнему адресу.
 Манифест перепроверил, все должно работать. 
 
