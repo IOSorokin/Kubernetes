@@ -63,9 +63,11 @@
 Ответил Multitool по порту 9002
 
 ### 5. Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
-Ссылка на манифест Deployments:
-Ссылка на манифест Service:
-Ссылка на манифест Pod multitool:
+Ссылка на манифест Deployments: https://github.com/IOSorokin/Kubernetes/blob/main/1.4/YAML/deployment.yaml 
+
+Ссылка на манифест Service: https://github.com/IOSorokin/Kubernetes/blob/main/1.4/YAML/service.yaml
+
+Ссылка на манифест Pod multitool: https://github.com/IOSorokin/Kubernetes/blob/main/1.4/YAML/multitool.yaml
 
 
 
@@ -84,5 +86,5 @@
 
 
 ### Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
-Ссылка на манифест:
+Ссылка на манифест NodePort: https://github.com/IOSorokin/Kubernetes/blob/main/1.4/YAML/svc-nodeport.yaml
 
