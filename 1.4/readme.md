@@ -83,15 +83,14 @@
 ### Продемонстрировать доступ с помощью браузера или curl с локального компьютера.
 
 Предоставляю вывод curl
-Единственное не смог снаружи подключиться curl может яндекс блокирует порты? 
+![изображение](https://github.com/IOSorokin/Kubernetes/assets/148979909/c4d49894-b631-4bcf-8a96-b25f694bf348)
+Видим что pod доступен по порту 30000
 
-![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/39903211-9c14-4046-bebc-6a121eb0191a)
+Проверяем доступность multitool
 
-![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/4cabb7af-b922-4cbd-96cb-1aeb41b28cb3)
+![изображение](https://github.com/IOSorokin/Kubernetes/assets/148979909/dede0428-6d2d-4257-94c4-b4bb02f2eeb5)
 
-
-Потому, что я полностью выключил firewall на ВМ в облаке, интернет там есть. Порты видны. Но не удается подключиться по внешнему адресу.
-Манифест перепроверил, все должно работать. 
+Он тоже доступен по порту 30001
 
 ### Предоставить манифест и Service в решении, а также скриншоты или вывод команды п.2.
 Ссылка на манифест NodePort: https://github.com/IOSorokin/Kubernetes/blob/main/1.4/YAML/svc-nodeport.yaml
