@@ -2,11 +2,60 @@
 
 ## Задание 1. Создать Deployment приложений backend и frontend
 
-  1.  Создать Deployment приложения frontend из образа nginx с количеством реплик 3 шт.
-  2.  Создать Deployment приложения backend из образа multitool.
-  3.  Добавить Service, которые обеспечат доступ к обоим приложениям внутри кластера.
-  4.  Продемонстрировать, что приложения видят друг друга с помощью Service.
-  5.  Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
+ ### 1.  Создать Deployment приложения frontend из образа nginx с количеством реплик 3 шт.
+
+Создал Deployment для приложения frontend с тремя репликами в новом namespace "netology-net-2"
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/fbf8b80c-6f15-4d12-b191-8beb962257b5)
+
+Ссылка на манифест: Frontend:
+
+ ###  2.  Создать Deployment приложения backend из образа multitool.
+
+Создал Deployment для приложения Backend из образа multitool
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/51697a1c-8add-46dc-9454-d7ca7670a6a4)
+
+Ссылка на манифест Backend:
+
+Проверяем все ли доступно и создалось, видно что все поды создались
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/7155ad29-da26-43fa-85c4-f67e01e13d99)
+
+
+
+ ### 3.  Добавить Service, которые обеспечат доступ к обоим приложениям внутри кластера.
+
+Создал манифест Service для обеспечения доступа к обоим приложениям
+
+Проверяю все ли создалось: 
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/0ce375f6-988b-497a-b5e3-17f5ac133136)
+
+Все создалось успешно
+
+Ссылка на манифест Service:
+
+  
+ ### 4.  Продемонстрировать, что приложения видят друг друга с помощью Service.
+
+Используя curl проверяю, видят ли приложения друг-друга
+
+Из под backend доступность есть
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/2a526d5d-05cd-46a9-acf6-6f0ca42e9724)
+
+Из под front тоже вижу доступность
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/c1dd7feb-d9e8-4ae1-b165-bd667f23af71)
+
+
+ 
+ ### 5.  Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
+
+Манифест Frontend
+Манифест Backend
+Манифест Service
 
 Задание 2. Создать Ingress и обеспечить доступ к приложениям снаружи кластера
 
