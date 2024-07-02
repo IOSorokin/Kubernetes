@@ -53,9 +53,11 @@
  
  ### 5.  Предоставить манифесты Deployment и Service в решении, а также скриншоты или вывод команды п.4.
 
-Манифест Frontend
-Манифест Backend
-Манифест Service
+Манифест Frontend: https://github.com/IOSorokin/Kubernetes/blob/main/1.5/YAML/front_deploy.yaml
+
+Манифест Backend: https://github.com/IOSorokin/Kubernetes/blob/main/1.5/YAML/back_deploy.yaml
+
+Манифест Service: https://github.com/IOSorokin/Kubernetes/blob/main/1.5/YAML/service.yaml
 
 Задание 2. Создать Ingress и обеспечить доступ к приложениям снаружи кластера
 
