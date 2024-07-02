@@ -59,10 +59,37 @@
 
 Манифест Service: https://github.com/IOSorokin/Kubernetes/blob/main/1.5/YAML/service.yaml
 
-Задание 2. Создать Ingress и обеспечить доступ к приложениям снаружи кластера
+## Задание 2. Создать Ingress и обеспечить доступ к приложениям снаружи кластера
 
-  1.  Включить Ingress-controller в MicroK8S.
-  2.  Создать Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.
-  3.  Продемонстрировать доступ с помощью браузера или curl с локального компьютера.
-  4.  Предоставить манифесты и скриншоты или вывод команды п.2.
+ ### 1.  Включить Ingress-controller в MicroK8S.
 
+Включил Ingress-controller в MicroK8S, проверил его работоспособность:
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/faeef2e7-6a43-4494-ae20-6eab04e1724d)
+
+Проверяю его доступность:
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/2fe244b9-8c6c-4a16-8c86-c61d07ab0293)
+
+ 
+ ### 2.  Создать Ingress, обеспечивающий доступ снаружи по IP-адресу кластера MicroK8S так, чтобы при запросе только по адресу открывался frontend а при добавлении /api - backend.
+
+Пишу манифест ingress обеспеивающий доступ снаружи по IP-адреса кластера MikroK8S, применяю его:
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/6297d391-e13c-4ddc-8709-4c011ceb8bf3)
+
+Вижу что ingress создан
+ 
+ ### 3.  Продемонстрировать доступ с помощью браузера или curl с локального компьютера.
+
+Для того, чтобы можно было попасть на под через curl с локального комьютера, нужно прописать имя сайта в файле hosts. Чтобы http://netologyingress.com ссылался на localhost.
+Проверяем после добавления.
+
+![image](https://github.com/IOSorokin/Kubernetes/assets/148979909/1a9154ef-f3ff-4954-aff5-c5c1da883ed5)
+
+
+При обращении на http://netologyingress.com вижу, что отвечает NGINX, а при обращении на http://netologyingress.com/api отвечает multitool. Отсюда вывод, что все поднялось и работает корректно.
+ 
+ ### 4.  Предоставить манифесты и скриншоты или вывод команды п.2.
+ 
+Манифест Ingress: https://github.com/IOSorokin/Kubernetes/blob/main/1.5/YAML/ingress.yaml
