@@ -44,19 +44,19 @@ CPU = 6 core + 6 core = 12 core
 
 CPU = 1 core * 3 ноды = 3 core
 
-    Cache:
+   * Cache:
 
 ОЗУ = 4 Gb * 3 ноды = 12 Gb
 
 CPU = 1 core * 3 ноды = 3 core
 
-    Frontend:
+   * Frontend:
 
 ОЗУ = 50 Mb * 5 нод = 250 Mb
 
 CPU = 0.2 core * 5 нод = 1 core
 
-    Backend:
+   * Backend:
 
 ОЗУ = 600 Mb * 10 ноды = 6 Gb
 
